@@ -5,17 +5,18 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Самый лучший магазин гаджетов - Девайс</h1>
       <span class="logo">Device</span>
-      <div class="menu-user">
-        <input type="search" class="menu-user__search" placeholder="Поиск по сайту">
-        <a href="#" class="menu-user__login">Войти</a>
-        <a href="#" class="menu-user__compare">Сравнить</a>
-        <a href="#" class="menu-user__basket">Корзина</a>
-      </div>
       <nav class="menu-nav">
-        <ul>
+        <h2>Навигация по сайту</h2>
+        <div class="user-nav">
+          <input type="search" class="user-nav__search" placeholder="Поиск по сайту">
+          <a href="#" class="user-nav__login">Войти</a>
+          <a href="#" class="user-nav__compare">Сравнить</a>
+          <a href="#" class="user-nav__cart">Корзина</a>
+        </div>
+        <ul class="site-nav">
           <li><a href="#">Каталог товаров</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
@@ -26,6 +27,7 @@
 
     <main>
       <article class="slider">
+        <h2>Наша реклама</h2>
         <img src="http://placehold.it/150x100" alt="Гаджет селфи-палка">
         <span class="slider__tagline">Делай селфи, как Бен Стиллер!</span>
         <p>
@@ -33,12 +35,12 @@
         </p>
         <div class="table">
           <span class="table__caption">Подробнее</span>
-          <ul>
+          <ul class="table__row">
             <li>8,5 м</li>
             <li>5 кг</li>
             <li>Карбон</li>
           </ul>
-          <ul>
+          <ul class="table__row">
             <li>Длина палки</li>
             <li>Вес палки</li>
             <li>Материал</li>
@@ -50,37 +52,37 @@
         <li>
           <a href="#">
             <img src="http://placehold.it/50x50" alt="Гаджет">
-            <p>Виртуальная реальность</p>
+            <h3>Виртуальная реальность</h3>
           </a>
         </li>
         <li>
           <a href="#">
             <img src="http://placehold.it/50x50" alt="Гаджет">
-            <p>Моноподы для селфи</p>
+            <h3>Моноподы для селфи</h3>
           </a>
         </li>
         <li>
           <a href="#">
             <img src="http://placehold.it/50x50" alt="Гаджет">
-            <p>Экшн-камеры</p>
+            <h3>Экшн-камеры</h3>
           </a>
         </li>
         <li>
           <a href="#">
             <img src="http://placehold.it/50x50" alt="Гаджет">
-            <p>Фитнес-браслеты</p>
+            <h3>Фитнес-браслеты</h3>
           </a>
         </li>
         <li>
           <a href="#">
             <img src="http://placehold.it/50x50" alt="Гаджет">
-            <p>Умные часы</p>
+            <h3>Умные часы</h3>
           </a>
         </li>
         <li>
           <a href="#">
             <img src="http://placehold.it/50x50" alt="Гаджет">
-            <p>Квадрокоптеры</p>
+            <h3>Квадрокоптеры</h3>
           </a>
         </li>
       </ul>
