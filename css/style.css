@@ -1,0 +1,114 @@
+@font-face { 
+  font-family: "Gilroy"; 
+  src: url("../fonts/web/gilroylight.woff2") format("woff2"), 
+       url("../fonts/gilroy/Gilroylight.ttf")  format("truetype"), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url("../fonts/web/gilroylight.woff") format("woff"); 
+  font-weight: 300; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: "Gilroy"; 
+  src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"), 
+       url("../fonts/gilroy/Gilroyextrabold.ttf")  format("truetype"), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url("../fonts/web/gilroyextrabold.woff") format("woff"); 
+  font-weight: 800; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: "Open-Sans"; 
+  src: url("../fonts/web/opensanslight.woff2") format("woff2"), 
+       url("../fonts/open_sans/OpenSans-Light.ttf")  format("truetype"), /* Только если нужна поддержка старых Android, иначе закомментировать */    
+       url("../fonts/web/opensanslight.woff") format("woff"); 
+  font-weight: 300; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: "Open-Sans"; 
+  src: url("../fonts/web/opensans.woff2") format("woff2"),  
+       url("../fonts/open_sans/OpenSans-Regular.ttf")  format("truetype"), /* Только если нужна поддержка старых Android, иначе закомментировать */   
+       url("../fonts/web/opensans.woff") format("woff"); 
+  font-weight: 400; 
+  font-style: normal; 
+}
+
+html,
+body {
+  font-family: "Gilroy", "Open-Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 1160px;
+  min-height: 186px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 61px;
+
+  background-color: rgba(247, 226, 150, 1);
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border: 1px solid green;
+  list-style: none;
+  font-family: "Open-Sans";
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.user-nav__item {
+  border: 1px solid green;
+}
+
+.user-nav__item a {
+  display: block;
+
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.user-nav__search {
+  height: 21px;
+
+  border: none;
+  background-color: rgba(247, 226, 150, 1);
+  font: inherit;
+}
+

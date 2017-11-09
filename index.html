@@ -2,25 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
     <header class="header">
       <h1 class="visually-hidden">Самый лучший магазин гаджетов - Девайс</h1>
-      <span class="logo">Device</span>
       <nav class="menu-nav">
         <h2 class="visually-hidden">Навигация по сайту</h2>
-        <div class="user-nav">
-          <input type="search" class="user-nav__search" placeholder="Поиск по сайту">
-          <a href="#" class="user-nav__login">Войти</a>
-          <a href="#" class="user-nav__compare">Сравнить</a>
-          <a href="#" class="user-nav__cart">Корзина</a>
-        </div>
+        <ul class="user-nav">
+          <li class="user-nav__item"><input type="search" class="user-nav__search" placeholder="Поиск по сайту"></li>
+          <li class="user-nav__item"><a href="#" class="user-nav__login">Войти</a></li>
+          <li class="user-nav__item"><a href="#" class="user-nav__compare">Сравнить</a></li>
+          <li class="user-nav__item"><a href="#" class="user-nav__cart">Корзина</a></li>
+        </ul>
         <ul class="site-nav">
           <li><a href="catalog.html">Каталог товаров</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#" class="site-nav__item">Доставка</a></li>
+          <li><a href="#" class="site-nav__item">Гарантия</a></li>
+          <li><a href="#" class="site-nav__item">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -47,64 +47,64 @@
           </ul>
         </div>
       </article>
-      <h2 class="visually-hidden">Наши товары</h2>
-      <ul class="catalog-priview">
+      <h2 class="visually-hidden">Наши популярные товары</h2>
+      <ul class="popular">
         <li>
-          <a href="#">
+          <a href="#" class="popular__item">
             <img src="http://placehold.it/50x50" alt="Гаджет">
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="popular__item">
             <img src="http://placehold.it/50x50" alt="Гаджет">
             <h3>Моноподы для селфи</h3>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="popular__item">
             <img src="http://placehold.it/50x50" alt="Гаджет">
             <h3>Экшн-камеры</h3>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="popular__item">
             <img src="http://placehold.it/50x50" alt="Гаджет">
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="popular__item">
             <img src="http://placehold.it/50x50" alt="Гаджет">
             <h3>Умные часы</h3>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="popular__item">
             <img src="http://placehold.it/50x50" alt="Гаджет">
             <h3>Квадрокоптеры</h3>
           </a>
         </li>
       </ul>
       <section class="services">
-        <div class="serveces__caption">
+        <ul class="serveces-menu">
+          <li><a href="#" class="services-menu__item">Доставка</a></li>
+          <li><a href="#" class="services-menu__item">Гарантия</a></li>
+          <li><a href="#" class="services-menu__item">Кредит</a></li>
+        </ul>        
+        <div class="serveces-menu__caption">
           <h2>Доставка</h2>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </div>
-        <ul class="serveces__menu">
-          <li><button type="button">Доставка</button></li>
-          <li><button type="button">Гарантия</button></li>
-          <li><button type="button">Кредит</button></li>
-        </ul>
       </section>
       <h2 class="visually-hidden">Фирмы</h2>
       <ul class="firms">
-        <li><a href="#"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
-        <li><a href="#"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
-        <li><a href="#"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
-        <li><a href="#"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
+        <li><a href="#" class="firms__item"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
+        <li><a href="#" class="firms__item"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
+        <li><a href="#" class="firms__item"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
+        <li><a href="#" class="firms__item"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>
       </ul>
       <div class="about-us">
         <h2>О нас</h2>
@@ -134,9 +134,9 @@
       </div>
       <div class="footer-nav">
         <ul>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#" class="footer-nav__item">Доставка</a></li>
+          <li><a href="#" class="footer-nav__item">Гарантия</a></li>
+          <li><a href="#" class="footer-nav__item">Контакты</a></li>
         </ul>
       </div>
       <div class="footer-menu">
@@ -146,9 +146,9 @@
         <span>Тел.: +7 (495) 495-95-95</span>
       </div>
       <ul class="social-btn">
-        <li><a href="#">Фэйсбук</a></li>
-        <li><a href="#">Инстаграмм</a></li>
-        <li><a href="#">Твиттер</a></li>
+        <li><a href="#" class="social-btn__item">Фэйсбук</a></li>
+        <li><a href="#" class="social-btn__item">Инстаграмм</a></li>
+        <li><a href="#" class="social-btn__item">Твиттер</a></li>
       </ul>
       <div class="academy-logo">
         <a href="#">
