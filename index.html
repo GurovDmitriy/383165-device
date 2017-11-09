@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
@@ -14,7 +15,6 @@
         </svg>
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="user-nav">
-          <img src="img/l" alt="">
           <li class="user-nav__item user-nav__search">
             <input type="search" placeholder="Поиск по сайту" id="search">
           </li>
@@ -99,54 +99,68 @@
       <ul class="popular">
         <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="img/popular-1.svg" alt="Гаджет">
+            <div class="wrapper-popular">
+              <img src="img/popular-1.svg" alt="Гаджет">
+            </div>
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="img/popular-2.svg" alt="Гаджет">
+            <div class="wrapper-popular">
+              <img src="img/popular-2.svg" alt="Гаджет">
+            </div>
             <h3>Моноподы для селфи</h3>
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="img/popular-3.svg" alt="Гаджет">
+            <div class="wrapper-popular">
+              <img src="img/popular-3.svg" alt="Гаджет">
+            </div>
             <h3>Экшн-камеры</h3>
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="img/popular-4.svg" alt="Гаджет">
+            <div class="wrapper-popular">
+              <img src="img/popular-4.svg" alt="Гаджет">
+            </div>
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="img/popular-5.svg" alt="Гаджет">
+            <div class="wrapper-popular">
+              <img src="img/popular-5.svg" alt="Гаджет">
+            </div>
             <h3>Умные часы</h3>
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="img/popular-6.svg" alt="Гаджет">
+            <div class="wrapper-popular">
+              <img src="img/popular-6.svg" alt="Гаджет">
+            </div>
             <h3>Квадрокоптеры</h3>
           </a>
         </li>
       </ul>
-      <section class="services">
-        <ul class="serveces-menu">
-          <li><a href="#" class="services-menu__item">Доставка</a></li>
-          <li><a href="#" class="services-menu__item">Гарантия</a></li>
-          <li><a href="#" class="services-menu__item">Кредит</a></li>
-        </ul>        
-        <div class="serveces-menu__caption">
-          <h2>Доставка</h2>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-        </div>
-      </section>
+      <div class="wrapper-services">
+        <section class="services">
+          <ul class="serveces-menu">
+            <li class="services-menu__item"><a href="#">Доставка</a></li>
+            <li class="services-menu__item"><a href="#">Гарантия</a></li>
+            <li class="services-menu__item"><a href="#">Кредит</a></li>
+          </ul>        
+          <div class="serveces-menu__caption">
+            <h2>Доставка</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+        </section>
+      </div>
       <h2 class="visually-hidden">Фирмы</h2>
       <ul class="firms">
         <li><a href="#" class="firms__item"><img src="http://placehold.it/50x50" alt="Бренды"></a></li>

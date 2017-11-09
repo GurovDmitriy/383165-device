@@ -149,8 +149,6 @@ body {
   padding: 0;
 
   list-style: none;
-  font-family: "Gilroy";
-  font-weight: 800;
   letter-spacing: 0.2em;
   line-height: 1.2em;
   text-transform: uppercase;
@@ -217,9 +215,7 @@ body {
 .slider__tagline {
   width: 392px;
 
-  font-family: "Gilroy";
   font-size: 47px;
-  font-weight: 800;
 }
 
 .slider__text p {
@@ -274,19 +270,104 @@ body {
   margin: 0;
   padding: 0;
   margin: 0 auto;
+  margin-top: 100px;
 
   list-style: none;
-  font-family: "Gilroy";
-  font-weight: 800;
 }
 
 .popular__item {
   width: 160px;
 }
 
+.wrapper-popular {
+  position: relative;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: rgba(247, 226, 150, 1);
+}
+
+.wrapper-popular img {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .popular__item a {
   display: block;
 
   text-decoration: none;
+  color: rgba(0, 0, 0, 1); 
+}
+
+.popular__item h3 {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800; 
+}
+
+/* доставка гарантия кредит */
+
+.wrapper-services {
+  width: 100%;
+  min-height: 288px;
+
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.services {
+  display: flex;
+
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 187px;
+}
+
+.serveces-menu {
+  display:  flex;
+  flex-direction: column;
+
+  width: 288px;
+  min-height: 323px;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  margin-top: -100px;
+
+  list-style: none;
+  border-right: 4px solid rgba(0, 0, 0, 1);
+}
+
+.services-menu__item {
+  border: 1px solid red;
+  margin-top: 40px;
+}
+
+.services-menu__item:first-child {
+  margin-top: 0px;  
+}
+
+.services-menu__item a {
+  text-decoration: none;
   color: rgba(0, 0, 0, 1);
+}
+
+.serveces-menu__caption {
+  width: 426px;
+  margin-left: 118px;
+  margin-top: -70px;  
+}
+
+.serveces-menu__caption h2 {
+  font-size: 47px;
+}
+
+.serveces-menu__caption p {
+  font-family: "Open-Sans";
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
 }
