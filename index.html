@@ -9,79 +9,127 @@
     <header class="header">
       <h1 class="visually-hidden">Самый лучший магазин гаджетов - Девайс</h1>
       <nav class="menu-nav">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184px" height="36px">
+          <text font-family="Gilroy" transform="matrix( 1.82650742953452, 0, 0, 1.81409077709194,10.5506823714686, 34.3141183583879)" font-weight="bold" font-size="26.46px">DEVICE</text>
+        </svg>
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="user-nav">
-          <li class="user-nav__item"><input type="search" class="user-nav__search" placeholder="Поиск по сайту"></li>
-          <li class="user-nav__item"><a href="#" class="user-nav__login">Войти</a></li>
-          <li class="user-nav__item"><a href="#" class="user-nav__compare">Сравнить</a></li>
-          <li class="user-nav__item"><a href="#" class="user-nav__cart">Корзина</a></li>
+          <img src="img/l" alt="">
+          <li class="user-nav__item user-nav__search">
+            <input type="search" placeholder="Поиск по сайту" id="search">
+          </li>
+          <li class="user-nav__item user-nav__login"><a href="#" title="войти">Войти</a></li>
+          <li class="user-nav__item user-nav__compare"><a href="#" title="сравнить">Сравнить</a></li>
+          <li class="user-nav__item user-nav__cart"><a href="#" title="корзина">Корзина</a></li>
         </ul>
         <ul class="site-nav">
-          <li><a href="catalog.html">Каталог товаров</a></li>
-          <li><a href="#" class="site-nav__item">Доставка</a></li>
-          <li><a href="#" class="site-nav__item">Гарантия</a></li>
-          <li><a href="#" class="site-nav__item">Контакты</a></li>
+          <li class="site-nav__item site-nav__item-catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-nav__item"><a href="#">Доставка</a></li>
+          <li class="site-nav__item"><a href="#">Гарантия</a></li>
+          <li class="site-nav__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <article class="slider">
+      <article class="slider slider-1">
         <h2 class="visually-hidden">Наша реклама</h2>
-        <img src="http://placehold.it/150x100" alt="Гаджет селфи-палка">
-        <span class="slider__tagline">Делай селфи, как Бен Стиллер!</span>
-        <p>
-          Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <div class="table">
-          <span class="table__caption">Подробнее</span>
-          <ul class="table__row">
-            <li>8,5 м</li>
-            <li>5 кг</li>
-            <li>Карбон</li>
-          </ul>
-          <ul class="table__row">
-            <li>Длина палки</li>
-            <li>Вес палки</li>
-            <li>Материал</li>
-          </ul>
+        <img src="img/slider-1.png" class="slider__img" alt="Гаджет селфи-палка" width="384" height="486">
+        <div class="slider__text">
+          <span class="slider__tagline">Делай селфи, как Бен Стиллер!</span>
+          <p>
+            Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <div class="table">
+            <span class="table__caption">Подробнее</span>
+            <ul class="table__row">
+              <li>8,5 м</li>
+              <li>5 кг</li>
+              <li>Карбон</li>
+            </ul>
+            <ul class="table__row">
+              <li>Длина палки</li>
+              <li>Вес палки</li>
+              <li>Материал</li>
+            </ul>
+          </div>
         </div>
       </article>
+      <article class="slider slider-2">
+        <h2 class="visually-hidden">Наша реклама</h2>
+        <img src="img/slider-2.png" class="slider__img" alt="Гаджет селфи-палка" width="384" height="486">
+        <div class="slider__text">
+          <span class="slider__tagline">Худеем правильно!</span>
+          <p>
+            Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+          </p>
+          <div class="table">
+            <span class="table__caption">Подробнее</span>
+            <ul class="table__row">
+              <li>48 часов</li>
+            </ul>
+            <ul class="table__row">
+              <li>Без подзарядки</li>
+            </ul>
+          </div>
+        </div>
+      </article>  
+      <article class="slider slider-3">
+        <h2 class="visually-hidden">Наша реклама</h2>
+        <img src="img/slider-3.png" class="slider__img" alt="Гаджет селфи-палка" width="384" height="486">
+        <div class="slider__text">
+          <span class="slider__tagline">Порхает как бабочка, жалит как пчела!</span>
+          <p>
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <div class="table">
+            <span class="table__caption">Подробнее</span>
+            <ul class="table__row">
+              <li>800 м</li>
+              <li>50 м</li>
+            </ul>
+            <ul class="table__row">
+              <li>Дальность полета</li>
+              <li>Радиус поражения</li>
+            </ul>
+          </div>
+        </div>
+      </article>          
       <h2 class="visually-hidden">Наши популярные товары</h2>
       <ul class="popular">
-        <li>
+        <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="http://placehold.it/50x50" alt="Гаджет">
+            <img src="img/popular-1.svg" alt="Гаджет">
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
-        <li>
+        <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="http://placehold.it/50x50" alt="Гаджет">
+            <img src="img/popular-2.svg" alt="Гаджет">
             <h3>Моноподы для селфи</h3>
           </a>
         </li>
-        <li>
+        <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="http://placehold.it/50x50" alt="Гаджет">
+            <img src="img/popular-3.svg" alt="Гаджет">
             <h3>Экшн-камеры</h3>
           </a>
         </li>
-        <li>
+        <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="http://placehold.it/50x50" alt="Гаджет">
+            <img src="img/popular-4.svg" alt="Гаджет">
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
-        <li>
+        <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="http://placehold.it/50x50" alt="Гаджет">
+            <img src="img/popular-5.svg" alt="Гаджет">
             <h3>Умные часы</h3>
           </a>
         </li>
-        <li>
+        <li class="popular__item">
           <a href="#" class="popular__item">
-            <img src="http://placehold.it/50x50" alt="Гаджет">
+            <img src="img/popular-6.svg" alt="Гаджет">
             <h3>Квадрокоптеры</h3>
           </a>
         </li>
