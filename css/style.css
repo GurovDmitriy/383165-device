@@ -190,6 +190,48 @@ body {
   margin-right: 114px;
 }
 
+.submenu-nav {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper-submenu {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  top: 38px;
+  padding-bottom: 20px;
+
+  background-color: rgba(247, 226, 150, 1);
+}
+
+.submenu-list {
+  display: flex;
+  flex-wrap: wrap;  
+
+  width: 181px;
+  min-height: 87px;
+  margin: 0;
+  margin-right: 57px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.submenu-list__item a {
+  display: block;
+
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Open-Sans";
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
 /* содержание */
 
 .slider {
@@ -247,7 +289,7 @@ body {
 }
 
 .slider-1 {
-  background: url("../img/01.png") no-repeat 95% 0;
+  background: url("../img/01.png") no-repeat 933px 0;
 }
 
 .slider-2 {
@@ -369,6 +411,11 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+}
+
+.serveces-menu__warranty,
+.serveces-menu__credit {
+  display: none;
 }
 
 /* фирмы */
