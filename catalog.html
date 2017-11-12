@@ -10,9 +10,11 @@
     <header class="header">
       <h1 class="visually-hidden">Самый лучший магазин гаджетов - Девайс</h1>
       <nav class="menu-nav">
-        <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184px" height="36px">
-          <text font-family="Gilroy" transform="matrix( 1.82650742953452, 0, 0, 1.81409077709194,10.5506823714686, 34.3141183583879)" font-weight="bold" font-size="26.46px">DEVICE</text>
-        </svg>
+        <a href="index.html">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184px" height="36px">
+            <text font-family="Gilroy" transform="matrix( 1.82650742953452, 0, 0, 1.81409077709194,10.5506823714686, 34.3141183583879)" font-weight="bold" font-size="26.46px">DEVICE</text>
+          </svg>
+        </a> 
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="user-nav">
           <li class="user-nav__item user-nav__search">
@@ -23,86 +25,109 @@
           <li class="user-nav__item user-nav__cart"><a href="#" title="корзина">Корзина</a></li>
         </ul>
         <ul class="site-nav">
-          <li class="site-nav__item site-nav__item-catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-nav__item site-nav__item-catalog">
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="submenu-list">
+              <li class="submenu-list__item"><a href="#">Виртуальная реальность</a></li>
+              <li class="submenu-list__item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="submenu-list__item"><a href="#">Квадрокоптеры</a></li>
+              <li class="submenu-list__item"><a href="#">Моноподы для селфи</a></li>
+              <li class="submenu-list__item"><a href="#">Умные часы</a></li>
+              <li class="submenu-list__item"><a href="#">Экшн-камеры</a></li>
+            </ul>                     
+          </li>
           <li class="site-nav__item"><a href="#">Доставка</a></li>
           <li class="site-nav__item"><a href="#">Гарантия</a></li>
           <li class="site-nav__item"><a href="#">Контакты</a></li>
         </ul>
-        <div class="submenu-nav">
-          <div class="wrapper-submenu">
-            <ul class="submenu-list">
-              <li class="submenu-list__item"><a href="#">Виртуальная реальность</a></li>
-              <li class="submenu-list__item"><a href="#">Моноподы для селфи</a></li>
-              <li class="submenu-list__item"><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul class="submenu-list">
-              <li class="submenu-list__item"><a href="#">Фитнес-браслеты</a></li>
-              <li class="submenu-list__item"><a href="#">Умные часы</a></li>
-            </ul>
-            <ul class="submenu-list">
-              <li class="submenu-list__item"><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </div>                    
-        </div>        
       </nav>
     </header>
 
     <main>
+      <div class="wrapper-breadscrumps">
       <h2>Моноподы для селфи</h2>
       <ul class="breadscrumbs">
-        <li><a href="#" class="breadscrumbs__item">Главная</a></li>
-        <li><a href="#" class="breadscrumbs__item">Каталог товаров</a></li>
-        <li><a href="#" class="breadscrumbs__item">Моноподы для селфи</a></li>
+        <li class="breadscrumbs__item"><a href="#">Главная</a></li>
+        <li class="breadscrumbs__item"><a href="#">Каталог товаров</a></li>
+        <li class="breadscrumbs__item"><a href="#">Моноподы для селфи</a></li>
       </ul>
-      <section class="filter">
-        <span>Фильтр</span>
-      </section>
-      <section class="catalog">
-        <h2 class="visually-hidden">Список товаров</h2>
-        <span>Сортировка:</span>
-        <ul class="catalog__sort">
-          <li><button type="button">По цене</button></li>
-          <li><button type="button">По типу</button></li>
-          <li><button type="button">По популярности</button></li>
-        </ul>
-        <ul class="catalog-list">
-          <li>
-            <a href="#" class="catalog-list__item">
-              <img src="http://placehold.it/100x100" alt="Гаджет">
-              <h3>Любительская селфи-палка</h3>
-              <span class="catalog-list__price">500 руб.</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="catalog-list__item">
-              <img src="http://placehold.it/100x100" alt="Гаджет">
-              <h3>Профессиональная селфи-палка</h3>
-              <span class="catalog-list__price">1500 руб.</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="catalog-list__item">
-              <img src="http://placehold.it/100x100" alt="Гаджет">
-              <h3>Непотопляемая селфи-палка</h3>
-              <span class="catalog-list__price">2500 руб.</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="catalog-list__item">
-              <img src="http://placehold.it/100x100" alt="Гаджет">
-              <h3>Селфи-палка «Следуй за мной»</h3>
-              <span class="catalog-list__price">4900 руб.</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="paginator">
-          <li><a href="#">Назад</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Вперед</a></li>
-        </ul>        
-      </section>
+      </div>
+      <div class="wrapper-catalog">
+        <div class="catalog">
+          <div class="block-form">
+            <form action="form">
+              <fieldset>
+                <legend>Стоимость</legend>
+              </fieldset>
+              <fieldset>
+                <legend>Цвет</legend>
+                <ul class="form-color">
+                  <li><input type="checkbox"><label for="">Черный</label></li>
+                  <li><input type="checkbox"><label for="">Белый</label></li>
+                  <li><input type="checkbox"><label for="">Синий</label></li>
+                  <li><input type="checkbox"><label for="">Красный</label></li>
+                  <li><input type="checkbox"><label for="">Розовый</label></li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Bluetooth</legend>
+                <lu class="form-bluetooth">
+                  <li><input type="radio">Есть</li>
+                  <li><input type="radio">Нет</li>
+                </lu>
+              </fieldset>
+              <button type="submit">Показать</button>
+            </form>
+          </div>
+          <div class="block-catalog">
+            <ul class="catalog-sort">
+              <li><span>Сортировка</span></li>
+              <li><button type="button">По цене</button></li>
+              <li><button type="button">По типу</button></li>
+              <li><button type="button">По популярности</button></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="catalog-list">
+              <li class="catalog-list__item">
+                <a href="#">
+                  <img src="img/item-1.png" alt="Гаджет" width="360" height="380">
+                  <h3>Любительская селфи-палка</h3>
+                  <span class="catalog-list__price">500 руб.</span>
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a href="#">
+                  <img src="img/item-2.jpg" alt="Гаджет" width="360" height="380">
+                  <h3>Профессиональная селфи-палка</h3>
+                  <span class="catalog-list__price">1500 руб.</span>
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a href="#">
+                  <img src="img/item-3.jpg" alt="Гаджет" width="360" height="380">
+                  <h3>Непотопляемая селфи-палка</h3>
+                  <span class="catalog-list__price">2500 руб.</span>
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a href="#">
+                  <img src="img/item-4.jpg" alt="Гаджет" width="360" height="380">
+                  <h3>Селфи-палка «Следуй за мной»</h3>
+                  <span class="catalog-list__price">4900 руб.</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="paginator">
+              <li><a href="#">Назад</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Вперед</a></li>
+            </ul>        
+          </div>
+        </div>      
+      </div>
     </main>
 
     <footer class="footer">

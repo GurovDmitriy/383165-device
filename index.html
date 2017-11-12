@@ -16,34 +16,29 @@
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="user-nav">
           <li class="user-nav__item user-nav__search">
-            <input type="search" placeholder="Поиск по сайту" id="search">
+            <input type="search" placeholder="Поиск по сайту" class="search">
+            <button type="button" class="button-search">Найти</button>
           </li>
           <li class="user-nav__item user-nav__login"><a href="#" title="войти">Войти</a></li>
           <li class="user-nav__item user-nav__compare"><a href="#" title="сравнить">Сравнить</a></li>
           <li class="user-nav__item user-nav__cart"><a href="#" title="корзина">Корзина</a></li>
         </ul>
         <ul class="site-nav">
-          <li class="site-nav__item site-nav__item-catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-nav__item site-nav__item-catalog">
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="submenu-list">
+              <li class="submenu-list__item"><a href="#">Виртуальная реальность</a></li>
+              <li class="submenu-list__item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="submenu-list__item"><a href="#">Квадрокоптеры</a></li>
+              <li class="submenu-list__item"><a href="#">Моноподы для селфи</a></li>
+              <li class="submenu-list__item"><a href="#">Умные часы</a></li>
+              <li class="submenu-list__item"><a href="#">Экшн-камеры</a></li>
+            </ul>           
+          </li>
           <li class="site-nav__item"><a href="#">Доставка</a></li>
           <li class="site-nav__item"><a href="#">Гарантия</a></li>
           <li class="site-nav__item"><a href="#">Контакты</a></li>
         </ul>
-        <div class="submenu-nav">
-          <div class="wrapper-submenu">
-            <ul class="submenu-list">
-              <li class="submenu-list__item"><a href="#">Виртуальная реальность</a></li>
-              <li class="submenu-list__item"><a href="#">Моноподы для селфи</a></li>
-              <li class="submenu-list__item"><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul class="submenu-list">
-              <li class="submenu-list__item"><a href="#">Фитнес-браслеты</a></li>
-              <li class="submenu-list__item"><a href="#">Умные часы</a></li>
-            </ul>
-            <ul class="submenu-list">
-              <li class="submenu-list__item"><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </div>                    
-        </div>
       </nav>
     </header>
 
