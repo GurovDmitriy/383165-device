@@ -190,11 +190,11 @@ body {
   align-content: flex-start;  
 
   width: 1039px;
-  min-height: 142px;
+  min-height: 165px;
   margin: 0;
-  margin-top: 23px;  
   padding: 0;
   padding-right: 420px;
+  padding-top: 23px;
 
   list-style: none;
   background: rgba(247, 226, 150, 1); 
