@@ -315,53 +315,81 @@ body {
 
   width: 1160px;
   margin: 0 auto;
-  margin-top: -100px;
+  margin-top: -111px;
 }
 
 .slider__img {
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 .slider__text {
   display: flex;
   flex-direction: column;
 
-  margin-left: 125px;
-  margin-top: 70px;
+  margin-left: 126px;
+  margin-top: 79px;
 }
 
 .slider__tagline {
-  width: 392px;
+  width: 400px;
 
   font-size: 47px;
+  line-height: 1.2em;
+  letter-spacing: 0.015em;  
 }
 
 .slider__text p {
-  width: 477px;
+  width: 481px;
+  margin-top: 19px;  
 
   font-family: "Open-Sans";
   font-size: 15px;
   line-height: 30px;
-  font-weight: 300;  
+  font-weight: 300;
+  letter-spacing: 0.01em;    
 }
 
 .table {
   display: table;
+
+  width: 430px;
   margin-top: 50px;
 }
 
-.table__caption {
-  display: table-caption;
-  margin-bottom: 50px;
+.slider a {
+  display: block;
+
+  width: 220px;
+  margin-top: 50px;
+
+  text-align: center;
+  background-color: rgba(240, 197, 46, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 0.4em;
+  letter-spacing: 0.2em;
+  color: rgba(0, 0, 0, 1);
 }
 
 .table__row {
   display: table-row;
 }
 
+.table__row:first-of-type {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.table__row:last-of-type {
+  font-family: "Open-Sans";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
 .table li {
   display: table-cell;
-  padding-top: 20px;  
 }
 
 .slider-1 {
@@ -473,9 +501,9 @@ body {
 }
 
 .serveces-menu__caption {
-  width: 426px;
+  width: 696px;
   margin-left: 118px;
-  margin-top: -70px;  
+  margin-top: -70px;
 }
 
 .serveces-menu__caption h2 {
@@ -483,15 +511,26 @@ body {
 }
 
 .serveces-menu__caption p {
+  width: 430px;
+
   font-family: "Open-Sans";
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
 }
 
-.serveces-menu__warranty,
+.serveces-menu__delivery {
+  background: url("../img/delivery.svg") no-repeat 100% 50%;
+ }
+
+.serveces-menu__warranty {
+  display: none;
+  background: url("../img/warranty.svg") no-repeat 100% 50%;
+}
+
 .serveces-menu__credit {
   display: none;
+  background: url("../img/credit.svg") no-repeat 100% 50%;
 }
 
 /* фирмы */
@@ -682,6 +721,50 @@ body {
 .html-icon {
   align-self: center;
   margin-left: auto;
+}
+
+/* напишите нам */
+
+.wrapper-form  {
+  width: 960px;
+  padding: 0 100px;
+  padding-top: 99px;
+  padding-bottom: 92px;
+}
+
+.wrapper-form legend {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;  
+}
+
+.wrapper-inner-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper-name-form,
+.wrapper-name-form input {
+  width: 360px; 
+}
+
+.wrapper-email-form,
+.wrapper-email-form input {
+  width: 360px;
+}
+
+.wrapper-text-form {
+  width: 100%;
+}
+
+.wrapper-text-form textarea {
+  width: 100%;
 }
 
 /* каталог */
