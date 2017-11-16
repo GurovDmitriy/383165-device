@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <h1 class="visually-hidden">Самый лучший магазин гаджетов - Девайс</h1>
-      <nav class="menu-nav">
+      <nav class="menu-nav menu-nav-catalog">
         <a href="index.html">
           <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184px" height="36px">
             <text font-family="Gilroy" transform="matrix( 1.82650742953452, 0, 0, 1.81409077709194,10.5506823714686, 34.3141183583879)" font-weight="bold" font-size="26.46px">DEVICE</text>
@@ -52,10 +52,23 @@
         <li class="breadscrumbs__item"><a href="#">Моноподы для селфи</a></li>
       </ul>
       </div>
+      <div class="wrapper-filter">
+        <div class="filter-box">
+          <div class="filter">Фильтр</div>
+          <ul class="catalog-sort">
+            <li><span>Сортировка</span></li>
+            <li><button type="button">По цене</button></li>
+            <li><button type="button">По типу</button></li>
+            <li><button type="button">По популярности</button></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>        
+      </div>
       <div class="wrapper-catalog">
         <div class="catalog">
-          <div class="block-form">
-            <form action="form">
+          <div class="block-form"> 
+            <form action="">
               <fieldset>
                 <legend>Стоимость</legend>
               </fieldset>
@@ -80,14 +93,6 @@
             </form>
           </div>
           <div class="block-catalog">
-            <ul class="catalog-sort">
-              <li><span>Сортировка</span></li>
-              <li><button type="button">По цене</button></li>
-              <li><button type="button">По типу</button></li>
-              <li><button type="button">По популярности</button></li>
-              <li></li>
-              <li></li>
-            </ul>
             <ul class="catalog-list">
               <li class="catalog-list__item">
                 <a href="#">
