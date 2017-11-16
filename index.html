@@ -16,7 +16,8 @@
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="user-nav">
           <li class="user-nav__item user-nav__search">
-            <input type="search" placeholder="Поиск по сайту" class="search">
+            <label class="visually-hidden" for="search-nav">Поиск по сайту</label>
+            <input type="search" placeholder="Поиск по сайту" class="search" id="search-nav">
             <button type="button" class="button-search">Найти</button>
           </li>
           <li class="user-nav__item user-nav__login"><a href="#" title="войти">Войти</a></li>
@@ -52,21 +53,22 @@
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
           <a href="#">Подробнее</a>          
-          <div class="table">
-            <ul class="table__row">
-              <li>8,5 м</li>
-              <li>5 кг</li>
-              <li>Карбон</li>
-            </ul>
-            <ul class="table__row">
-              <li>Длина палки</li>
-              <li>Вес палки</li>
-              <li>Материал</li>
-            </ul>
-          </div>
+          <table class="table">
+            <tr class="table__row">
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr class="table__row">
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
         </div>
       </article>
       <article class="slider slider-2">
+        <h2 class="visually-hidden">Наша реклама</h2>        
         <img src="img/slider-2.png" class="slider__img" alt="Гаджет селфи-палка" width="384" height="486">
         <div class="slider__text">
           <span class="slider__tagline">Худеем правильно!</span>
@@ -85,6 +87,7 @@
         </div>
       </article>  
       <article class="slider slider-3">
+        <h2 class="visually-hidden">Наша реклама</h2>        
         <img src="img/slider-3.png" class="slider__img" alt="Гаджет селфи-палка" width="384" height="486">
         <div class="slider__text">
           <span class="slider__tagline">Порхает как бабочка, жалит как пчела!</span>
@@ -249,26 +252,20 @@
       </div>
     </footer>
       <div class="wrapper-form">
-        <form action="">
+        <form action="#" method="post">
           <fieldset>
             <legend class="visually-hidden">Форма обратной связи</legend>
             <div class="wrapper-inner-form">
               <div class="wrapper-name-form">
-                <label for="name-field">
-                  <p>Ваше имя</p>
-                </label>
+                <label for="name-field">Ваше имя</label>
                 <input type="text" name="name" id="name-field" placeholder="Представьтесь пожалуйста">
               </div>
               <div class="wrapper-email-form">
-                <label for="email-field">
-                  <p>Ваш e-mail:</p>
-                </label>
+                <label for="email-field">Ваш e-mail:</label>
                 <input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
               </div>
               <div class="wrapper-text-form">          
-                <label for="text-field">
-                  <p>Текст письма:</p>
-                </label>
+                <label for="text-field">Текст письма:</label>
                 <textarea id="text-field">В свободной форме</textarea>
               </div>
             </div>    

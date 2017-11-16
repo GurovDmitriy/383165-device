@@ -110,7 +110,6 @@ body {
 .user-nav__item a {
   display: block;
 
-
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
 }
@@ -332,7 +331,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  margin-left: 126px;
+  margin-left: 125px;
   margin-top: 79px;
 }
 
@@ -356,17 +355,17 @@ body {
 }
 
 .table {
-  display: table;
-
-  width: 430px;
-  margin-top: 50px;
+  width: 100%;
+  margin-top: 69px;
+  border-collapse: collapse;
 }
 
 .slider a {
   display: block;
 
   width: 220px;
-  margin-top: 50px;
+  margin-top: 45px;
+  margin-left: 2px;
 
   text-align: center;
   background-color: rgba(240, 197, 46, 1);
@@ -378,13 +377,10 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.table__row {
-  display: table-row;
-}
-
 .table__row:first-of-type {
   font-size: 36px;
   font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 .table__row:last-of-type {
@@ -394,22 +390,31 @@ body {
   font-weight: 300;
 }
 
-.table li {
-  display: table-cell;
+.table td:first-child {
+  width: 33%;
+}
+
+.table td:last-child {
+  width: 38%;
+}
+
+.table__row:last-of-type td {
+  padding-top: 9px;
+  letter-spacing: 0.01em;
 }
 
 .slider-1 {
-  background: url("../img/01.png") no-repeat 933px 0;
+  background: url("../img/01.png") no-repeat 934px 9px;
 }
 
 .slider-2 {
   display: none;
-  background: url("../img/02.png") no-repeat 95% 0;
+  background: url("../img/02.png") no-repeat 934px 9px;
 }
 
 .slider-3 {
   display: none;
-  background: url("../img/03.png") no-repeat 95% 0;
+  background: url("../img/03.png") no-repeat 934px 9px;
 }
 
 /* популярные товары */
@@ -422,7 +427,7 @@ body {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 106px;
 
   list-style: none;
 }
@@ -448,6 +453,30 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.popular__item:nth-child(2) img {
+  top: 62%;
+}
+
+.popular__item:nth-child(3) img {
+  top: 51%;
+  left: 53%;
+}
+
+.popular__item:nth-child(4) img {
+  top: 51%;
+  left: 51%;
+}
+
+.popular__item:nth-child(5) img {
+  top: 51%;
+  left: 52%;
+}
+
+.popular__item:nth-child(6) img {
+  top: 52%;
+  left: 50%;
+}
+
 .popular__item a {
   display: block;
 
@@ -459,6 +488,13 @@ body {
   font-family: "Gilroy";
   font-size: 18px;
   font-weight: 800; 
+  line-height: 1.2em;
+  letter-spacing: 0.01em; 
+  margin-top: 35px;  
+}
+
+.popular__item:nth-child(2) h3 {
+  width: 120px;
 }
 
 /* доставка гарантия кредит */
@@ -475,35 +511,45 @@ body {
 
   width: 1160px;
   margin: 0 auto;
-  margin-top: 187px;
+  margin-top: 167px;
 }
 
 .serveces-menu {
   display:  flex;
   flex-direction: column;
 
-  width: 288px;
-  min-height: 323px;
+  width: 284px;
+  min-height: 319px;
   margin: 0;
   padding: 0;
   padding-top: 80px;
   margin-top: -100px;
 
   list-style: none;
-  border-right: 5px solid rgba(0, 0, 0, 1);
+  border-right: 7px solid rgba(0, 0, 0, 1);
 }
 
 .services-menu__item {
-  margin-top: 40px;
+  margin-bottom: 23px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
-.services-menu__item:first-child {
-  margin-top: 0px;  
+.services-menu__item:last-child {
+  margin-bottom: 0px;  
 }
 
 .services-menu__item a {
+  display: block;
+
+  width: 160px;
+  text-align: center;
+  background-color: rgba(240, 197, 46, 1);
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  line-height: 0.4em;
+  letter-spacing: 0.2em;
 }
 
 .serveces-menu__caption {
@@ -514,29 +560,42 @@ body {
 
 .serveces-menu__caption h2 {
   font-size: 47px;
+  letter-spacing: 0.01em;  
 }
 
 .serveces-menu__caption p {
   width: 430px;
 
+  margin-top: -10px;  
+
   font-family: "Open-Sans";
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+  letter-spacing: 0.01em;   
 }
 
 .serveces-menu__delivery {
-  background: url("../img/delivery.svg") no-repeat 100% 50%;
+  background: url("../img/delivery.svg") no-repeat 99.3% 44%;
  }
 
 .serveces-menu__warranty {
   display: none;
-  background: url("../img/warranty.svg") no-repeat 100% 50%;
+  background: url("../img/warranty.svg") no-repeat 99.3% 44%;
 }
 
 .serveces-menu__credit {
   display: none;
-  background: url("../img/credit.svg") no-repeat 100% 50%;
+  background: url("../img/credit.svg") no-repeat 99.3% 44%;
+}
+
+.services-menu__item:hover a {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(247, 225, 132, 1);     
+}
+
+.services-menu__item:hover {
+  background-color: rgba(0, 0, 0, 1);
 }
 
 /* фирмы */
