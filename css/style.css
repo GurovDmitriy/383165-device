@@ -87,6 +87,7 @@ body {
 .logo {
   margin-top: -18px;
   margin-left: -13px;
+  line-height: 0;
 }
 
 .user-nav {
@@ -247,6 +248,15 @@ body {
 
 /* состояния элементов шапки */
 
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
 .user-nav__search input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -303,6 +313,36 @@ body {
   background-color: rgba(247, 226, 150, 1); 
 }
 
+.search:focus + .button-search {
+ display: block;
+}
+
+.search:focus {
+  border-bottom: 2px solid black;
+}
+
+.button-search:hover {
+  background-color: rgba(0, 0, 0, 1); 
+  color: rgba(255, 255, 255, 1);
+}
+
+.button-search:active {
+  display: block;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-nav__item:not(.user-nav__search) a:hover,
+.site-nav__item a:hover,
+.submenu-list__item a:hover {
+  opacity: 0.6;
+}
+
+.user-nav__item:not(.user-nav__search) a:active,
+.site-nav__item a:active,
+.submenu-list__item a:active {
+  opacity: 0.3;
+}
+
 .user-nav__search input:focus {
   outline: none;
   font-family: "Open-Sans";
@@ -312,9 +352,11 @@ body {
   color: rgba(0, 0, 0, 1); 
 }
 
-.site-nav__item-catalog:hover .submenu-list {
+.site-nav__item-catalog:hover .submenu-list,
+.site-nav__catalog-link:focus + .submenu-list {
   display: flex;
 }
+
 
 /* содержание */
 
@@ -359,23 +401,35 @@ body {
 
 .table {
   width: 100%;
-  margin-top: 69px;
+  margin-top: 53px;
   border-collapse: collapse;
 }
 
-.slider a {
-  display: block;
-
+.wrapper-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   width: 220px;
-  margin-top: 45px;
+  min-height: 40px;
+}
+
+.slider__text .wrapper-btn {
+  margin-top: 28px;
   margin-left: 2px;
+}
+
+.wrapper-btn__item {
+  display: block;
 
   text-align: center;
   background-color: rgba(240, 197, 46, 1);
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 800;  
   font-size: 18px;
-  line-height: 0.4em;
+  line-height: 8px;
   letter-spacing: 0.2em;
   color: rgba(0, 0, 0, 1);
 }
@@ -418,6 +472,17 @@ body {
 .slider-3 {
   display: none;
   background: url("../img/03.png") no-repeat 934px 9px;
+}
+
+/* состояния элкментов содержания */
+
+.wrapper-btn__item:hover,
+.wrapper-btn__item:focus {
+  line-height: 40px;
+}
+
+.wrapper-btn__item:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* популярные товары */
@@ -500,6 +565,17 @@ body {
   width: 120px;
 }
 
+/* состояния элементов поппулярных товаров */
+
+.popular__item:hover .wrapper-popular,
+.popular__item:focus .wrapper-popular {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.popular__item:active {
+  opacity: 0.6;
+}
+
 /* доставка гарантия кредит */
 
 .wrapper-services {
@@ -518,7 +594,7 @@ body {
 }
 
 .serveces-menu {
-  display:  flex;
+  display: flex;
   flex-direction: column;
 
   width: 284px;
@@ -533,26 +609,21 @@ body {
 }
 
 .services-menu__item {
-  margin-bottom: 23px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  margin-bottom: 24px;
 }
 
 .services-menu__item:last-child {
   margin-bottom: 0px;  
 }
 
-.services-menu__item a {
-  display: block;
 
+.services-menu__item .wrapper-btn {
   width: 160px;
-  text-align: center;
-  background-color: rgba(240, 197, 46, 1);
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
-  text-transform: uppercase;
-  line-height: 0.4em;
-  letter-spacing: 0.2em;
+}
+
+.services-menu__item .wrapper-btn__item {
+  border: none;
+  padding: 0;
 }
 
 .serveces-menu__caption {
@@ -592,12 +663,14 @@ body {
   background: url("../img/credit.svg") no-repeat 99.3% 44%;
 }
 
-.services-menu__item:hover a {
-  background-color: rgba(0, 0, 0, 1);
-  color: rgba(247, 225, 132, 1);     
-}
+/* доставка гарантия кредит состояния элементов */
 
-.services-menu__item:hover {
+.services-menu__item .wrapper-btn__item:active {
+  color: rgba(247, 226, 150, 1);
+  background-color: rgba(0, 0, 0, 1);
+} 
+
+.services-menu__item:active {
   background-color: rgba(0, 0, 0, 1);
 }
 
@@ -613,6 +686,20 @@ body {
   padding: 0;
 
   list-style: none;
+}
+
+/* фирмы состояния элементов */
+
+.firms__item-link img:last-child {
+  display: none;
+}
+
+.firms__item-link:hover img:last-child {
+  display: block;
+}
+
+.firms__item-link:hover img:first-child {
+  display: none;
 }
 
 /* раздел контактов */
@@ -683,31 +770,17 @@ body {
   margin-top: 39px;
 }
 
-.about-us a,
-.contacts a {
-  display: block;
-
+.about-us .wrapper-btn,
+.contacts .wrapper-btn {
   width: 260px;
-  min-height: 8px;
-  margin-top: 81px;
-  padding-left: 5px;
-  padding-right: 5px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(240, 197, 43, 1);
-  letter-spacing: 0.2em;
-  line-height: 8px;
+  margin-top: 65px;
 }
 
 /* подвал */
 
 .footer {
   width: 100%;
-
-  margin-top: 98px;
+  margin-top: 82px;
 
   background-color: rgba(70, 70, 70, 1);
 }
@@ -818,7 +891,7 @@ body {
   position: relative;
 
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.7);
   padding-left: 26px;
 }
 
@@ -849,6 +922,52 @@ body {
 .html-icon {
   margin-top: 62px;
   margin-left: auto;
+}
+
+/* подвал состояния элементов */
+
+.footer-menu-list__item-link:hover,
+.footer-menu-list__item-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-menu-list__item-link:hover svg,
+.footer-menu-list__item-link:focus svg {
+  opacity: 0.6;
+}
+
+.footer-menu-list__item-link:active svg,
+.footer-menu-list__item-link:active {
+  opacity: 0.3;
+}
+
+.footer-nav-list__link:hover,
+.footer-nav-list__link:focus {
+  opacity: 0.6;
+}
+
+.footer-nav-list__link:active {
+  opacity: 0.3;
+}
+
+.footer-nav-social__item svg {
+  opacity: 0.3;
+}
+
+.footer-nav-social__item:hover svg {
+  opacity: 0.6;
+}
+
+.footer-nav-social__item:active svg {
+  opacity: 0.1;
+}
+
+.html-icon:hover svg {
+  opacity: 0.6;
+}
+
+.html-icon:active svg {
+  opacity: 0.3;
 }
 
 /* напишите нам */
