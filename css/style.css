@@ -36,7 +36,7 @@
 
 html,
 body {
-  font-family: "Gilroy", "Open-Sans", sans-serif;
+  font-family: "Gilroy", "Open-Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
 
@@ -432,6 +432,7 @@ body {
   line-height: 8px;
   letter-spacing: 0.2em;
   color: rgba(0, 0, 0, 1);
+  cursor: pointer;
 }
 
 .table__row:first-of-type {
@@ -917,6 +918,8 @@ body {
   margin-top: 34px;
 
   line-height: 30px;
+  text-decoration: none;
+  color: inherit;  
 }
 
 .html-icon {
@@ -1023,6 +1026,15 @@ body {
 
 .user-nav-catalog {
   margin-top: 13px;
+}
+
+.user-nav__login-in {
+  margin-right: 25px;
+}
+
+.user-nav__login-out {
+  margin-right: 64px;
+  opacity: 0.6;
 }
 
 /* крошки */
@@ -1292,6 +1304,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(177, 177, 177, 1);
   box-sizing: content-box;
+  cursor: pointer;
 }
 
 .toggle-max {
@@ -1384,6 +1397,12 @@ body {
   transform: translate(0%, -50%);
   width: 27px;
   height: 27px;
+  cursor: pointer;
+}
+
+.form-color label,
+.form-bluetooth label {
+  cursor: pointer;
 }
 
 .form-color label::before {
@@ -1408,6 +1427,22 @@ input[name="bluetooth"]:checked + label::before {
   padding: 0px
 }
 
+/* состояние элементов формы сортировки */
+
+.toggle:active {
+  width: 6px;
+  height: 6px;
+}
+
+input[type="checkbox"]:checked + label:hover,
+input[type="checkbox"] + label:hover,
+input[type="radio"]:checked + label:hover,
+input[type="radio"] + label:hover {
+  opacity: 0.6;
+}
+
+/* каталог картинки */
+
 .block-catalog {
   width: 760px;
   padding-top: 69px;
@@ -1424,6 +1459,7 @@ input[name="bluetooth"]:checked + label::before {
 }
 
 .catalog-list__item {
+  position: relative;
   width: 360px;
   margin: 0;
   margin-bottom: 34px;
@@ -1468,6 +1504,61 @@ input[name="bluetooth"]:checked + label::before {
   justify-content: space-between;
 }
 
+.in-cart {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 45.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.in-cart-btn {
+  width: 200px;
+  border: none;
+  padding: 0px;
+}
+
+.in-compare-btn {
+  border: none;
+  background: none;
+  font-family: "Open-Sans";
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-top: 5px;    
+}
+
+.shape-new {
+  position: absolute;
+}
+
+/* состояния картинок в каталоге */
+
+.catalog-list__item:hover .in-cart {
+  display: flex;
+}
+
+.catalog-list__item:hover img {
+  opacity: 0.7;
+}
+
+.in-compare-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.in-compare-btn:active {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+/* переключатель страниц */
+
 .paginator {
   display: flex;
   justify-content: space-around;
@@ -1476,8 +1567,6 @@ input[name="bluetooth"]:checked + label::before {
   width: 100%;
   min-height: 70px;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-top: 23px;
   margin-bottom: 73px;    
 
@@ -1495,6 +1584,8 @@ input[name="bluetooth"]:checked + label::before {
   text-transform: uppercase;  
 }
 
+
+
 .paginator__item:nth-child(2) {
   margin-left: auto;
   margin-right: 10px;
@@ -1508,3 +1599,41 @@ input[name="bluetooth"]:checked + label::before {
 .footer-catalog {
   margin-top: 4px;
 }
+
+.panigator-number {
+  opacity: 0.3;
+} 
+
+.panigator-number--active {
+  opacity: 1;
+}
+
+.panigator-prevous,
+.panigator-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  width: 137px;
+}
+
+/* панигатор состояния */
+
+.panigator-number:hover {
+  opacity: 0.6;
+} 
+
+.panigator-number:active {
+  opacity: 1;
+}
+
+.panigator-prevous:hover,
+.panigator-next:hover {
+  background-color: rgba(217, 217, 217, 1);
+}
+
+.panigator-prevous:active,
+.panigator-next:active {
+  opacity: 0.3;
+}
+
