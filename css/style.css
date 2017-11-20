@@ -1017,19 +1017,33 @@ body {
 
 /* каталог */
 
+.logo-catalog {
+  margin-top: -16px;
+}
+
+.user-nav-catalog {
+  margin-top: 13px;
+}
+
+/* крошки */
+
 .wrapper-breadscrumps {
   display: flex;
   flex-wrap: wrap;
 
+  padding-left: 60px;
   width: 1160px;
   margin: 0 auto;
 }
 
 .wrapper-breadscrumps h2 {
+  margin: 0px;
   margin-right: auto;
+  margin-top: 34px;
 
   font-size: 47px;
   font-weight: 800;
+  letter-spacing: 0.013em;  
 }
 
 .breadscrumbs {
@@ -1037,6 +1051,7 @@ body {
   width: 100%;
 
   margin: 0;
+  margin-top: 15px;  
   padding: 0;
 
   list-style: none;
@@ -1044,7 +1059,7 @@ body {
 
 .breadscrumbs__item {
   position: relative;
-  margin-right: 20px;
+  margin-right: 17px;
 }
 
 .breadscrumbs__item:not(:last-child)::after {
@@ -1068,20 +1083,35 @@ body {
   font-size: 14px;
   line-height: 36px;
   font-weight: 300;
+  letter-spacing: 0.01em;  
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
+/* крошки состояния элементов */
+
+.breadscrumbs a:hover,
+.breadscrumbs a:focus {
+  opacity: 0.6;
+}
+
+.breadscrumbs a:active {
+  opacity: 0.1;
+}
+
+/* фильтр */
+
 .wrapper-filter {
   width: 100%;
   background: linear-gradient(90deg, rgba(219, 219, 219, 1) 30%, rgba(235, 235, 235, 1) 30%);
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .filter-box {
   display: flex;
 
   width: 1160px;
+  padding-left: 60px;
   margin: 0 auto;
 }
 
@@ -1092,13 +1122,15 @@ body {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.015em;
-  line-height: 18px; 
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  opacity: 0.3; 
 }
 
 .filter {
   display: flex;
   align-items: center;
-  width: 268px;
+  width: 288px;
   min-height: 70px;
 
   background-color: rgba(219, 219, 219, 1);
@@ -1109,7 +1141,7 @@ body {
   font-family: "Gilroy";
   font-size: 16px;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.23em;
   text-transform: uppercase;
 }
 
@@ -1127,14 +1159,25 @@ body {
   background-color: rgba(235, 235, 235, 1);  
 }
 
-
-.catalog-sort li {
-  margin-left: 50px;
+.catalog-sort li:nth-child(2) {
+  margin-left: 44px;
+  margin-bottom: 3px;
 }
 
 .catalog-sort li:nth-last-child(2) {
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 17px;
+  margin-bottom: 3px;
+}
+
+.catalog-sort li:nth-child(3) {
+  margin-left: 18px;
+  margin-bottom: 3px;
+}
+
+.catalog-sort li:nth-child(4) {
+  margin-left: 20px;
+  margin-bottom: 3px;
 }
 
 .catalog-sort li:first-child {
@@ -1142,7 +1185,7 @@ body {
 }
 
 .catalog-sort li:last-child {
-  margin-left: 0px;
+  margin-bottom: 3px;
 }
 
 .sort-tick {
@@ -1156,6 +1199,40 @@ body {
   background-position: -10px -10px;
 }
 
+/* фильтр состояния элементов */ 
+
+.catalog-sort__item--active button {
+  opacity: 1;
+}
+
+.catalog-sort__item button:hover,
+.catalog-sort__item button:focus {
+  opacity: 0.6;
+}
+
+.catalog-sort__item button:active {
+  opacity: 1;
+}
+
+.sort-tick {
+  opacity: 0.3;
+}
+
+.sort-tick:hover,
+.sort-tick:focus {
+  opacity: 0.6;
+}
+
+.sort-tick:active {
+  opacity: 1;
+}
+
+.sort-tick--active {
+  opacity: 1;
+}
+
+/* форма сортировки */
+
 .wrapper-catalog {
   width: 100%;
   background: linear-gradient(90deg, rgba(239, 239, 239, 1) 30%, rgba(255, 255, 255, 1) 30%);
@@ -1166,13 +1243,14 @@ body {
   justify-content: space-between;
 
   width: 1160px;
+  padding-left: 59px; 
   margin: 0 auto; 
 }
 
 .block-form {
-  width: 268px;
+  width: 269px;
   background-color: rgba(239, 239, 239, 1);
-  padding-top: 75px;    
+  padding-top: 69px;    
 }
 
 .block-form form {
@@ -1181,14 +1259,15 @@ body {
 
 .rang-filter {
   width: 201px;
-  min-height: 139px;
+  min-height: 142px;
+  padding-top: 12px;
   border-top: 2px solid rgba(0, 0, 0, 1);
   border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
 .scale {
   width: 201px;
-  height: 2px;
+  height: 2px; 
   background-color: darkgray;
 }
 
@@ -1197,14 +1276,14 @@ body {
 }
 
 .range-controls {
-  margin-top: 30px;
+  margin-top: 37px;
 }
 
 .toggle {
   position: absolute;
   top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
+  left: 2%;
+  transform: translate(-50%, -50%);
   width: 4px;
   height: 4px;
 
@@ -1216,7 +1295,7 @@ body {
 }
 
 .toggle-max {
-  left: 50%;
+  left: 59%;
 }
 
 .bar {
@@ -1225,13 +1304,28 @@ body {
 }
 
 .price-controls {
-  margin-top: 20px;
+  margin-top: 10px;
+
+  font-family: "Gilroy";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  opacity: 0.2; 
 }
 
 .price-controls input {
   width: 50px;
   border: none;
-  background-color: rgba(239, 239, 239, 1);
+  background-color: rgba(239, 239, 239, 1);  
+}
+
+.price-controls label {
+  margin-right: 20px;  
+}
+
+.price-controls label:last-of-type {
+  margin-right: 0px;  
 }
 
 .form-color,
@@ -1240,29 +1334,39 @@ body {
   padding: 0;
 
   list-style: none;
+  font-family: "Open-Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.015em;  
+}
+
+.form-color,
+.form-bluetooth {
+  margin-top: 20px;
 }
 
 .block-form fieldset {
   margin: 0;
   padding: 0;
+  padding-bottom: 31px;
 
   border: none;  
+}
+
+.fieldset-color legend,
+.fieldset-bluetooth legend {
+  padding-top: 12px;
 }
 
 .block-form fieldset:first-of-type {
   border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
-.block-form legend {
-  margin: 0;
-  padding: 0;
-}
-
 .form-color li,
 .form-bluetooth li {
   position: relative;
-  padding-left: 50px;
-  margin-bottom: 30px;
+  padding-left: 39px;
 }
 
 .form-color input,
@@ -1275,7 +1379,7 @@ body {
   position: absolute;
   display: block;
   content: "";
-  top: 50%;
+  top: 52%;
   left: 0;
   transform: translate(0%, -50%);
   width: 27px;
@@ -1299,21 +1403,14 @@ input[name="bluetooth"]:checked + label::before {
 }
 
 .form-btn {
-  width: 100%;
-
-  font-family: "Gilroy";
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 0.4em;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  width: 201px;
   border: none;
-  background-color: rgba(240, 197, 46, 1);
+  padding: 0px
 }
 
 .block-catalog {
   width: 760px;
-  padding-top: 72px;
+  padding-top: 69px;
 }
 
 .catalog-list {
@@ -1329,9 +1426,15 @@ input[name="bluetooth"]:checked + label::before {
 .catalog-list__item {
   width: 360px;
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
 
   list-style: none;
+}
+
+.catalog-list__item:last-child,
+.catalog-list__item:nth-last-child(2) {
+  margin-bottom: 0px;
 }
 
 .catalog-list__item a,
@@ -1345,7 +1448,7 @@ input[name="bluetooth"]:checked + label::before {
 }
 
 .catalog-list__item h3 {
-  margin-top: 20px;
+  margin-top: 34px;
   width: 265px;
 }
 
@@ -1356,7 +1459,7 @@ input[name="bluetooth"]:checked + label::before {
 .catalog-list__price {
   font-weight: 300;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 36px;
 }
 
 .catalog-list__item a {
@@ -1375,6 +1478,8 @@ input[name="bluetooth"]:checked + label::before {
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 23px;
+  margin-bottom: 73px;    
 
   list-style: none;
   background-color: rgba(235, 235, 235, 1);
@@ -1398,4 +1503,8 @@ input[name="bluetooth"]:checked + label::before {
 .paginator__item:nth-last-child(2) {
   margin-left: 10px;
   margin-right: auto;
+}
+
+.footer-catalog {
+  margin-top: 4px;
 }

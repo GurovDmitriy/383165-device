@@ -10,13 +10,13 @@
     <header class="header">
       <h1 class="visually-hidden">Самый лучший магазин гаджетов - Девайс</h1>
       <nav class="menu-nav menu-nav-catalog">
-        <a class="logo">
+        <a href="index.html" class="logo logo-catalog">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184px" height="36px">
             <text font-family="Gilroy" transform="matrix( 1.82650742953452, 0, 0, 1.81409077709194,10.5506823714686, 34.3141183583879)" font-weight="bold" font-size="26.46px">DEVICE</text>
           </svg>
         </a>
         <h2 class="visually-hidden">Навигация по сайту</h2>
-        <ul class="user-nav">
+        <ul class="user-nav user-nav-catalog">
           <li class="user-nav__item user-nav__search">
             <label class="visually-hidden" for="search-nav">Поиск по сайту</label>
             <input type="search" placeholder="Поиск по сайту" class="search" id="search-nav">
@@ -78,11 +78,11 @@
           <div class="filter"><span>Фильтр:</span></div>
           <ul class="catalog-sort">
             <li><span>Сортировка:</span></li>
-            <li class="catalog-sort__item"><button type="button">По цене</button></li>
+            <li class="catalog-sort__item catalog-sort__item--active"><button type="button">По цене</button></li>
             <li class="catalog-sort__item"><button type="button">По типу</button></li>
             <li class="catalog-sort__item"><button type="button">По популярности</button></li>
-            <li><button class="sort-tick sort-up" aria-label="сортировка по возрастанию"></button></li>
-            <li><button class="sort-tick sort-down" aria-label="сортировка по убыванию"></button></li>
+            <li><button class="sort-tick sort-up"></button></li>
+            <li><button class="sort-tick sort-down  sort-tick--active"></button></li>
           </ul>
         </div>        
       </div>
@@ -94,7 +94,7 @@
                 <span>Стоимость</span>
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 20px; width: 65%"></div>
+                    <div class="bar" style="margin-left: 0px; width: 59%"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div> 
@@ -108,7 +108,7 @@
                   </label>
                 </div>
               </div>
-              <fieldset>
+              <fieldset class="fieldset-color">
                 <legend>Цвет</legend>
                 <ul class="form-color">
                   <li>
@@ -132,7 +132,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="fieldset-bluetooth">
                 <legend>Bluetooth</legend>
                 <ul class="form-bluetooth">
                   <li>
@@ -145,7 +145,9 @@
                   </li>
                 </lu>
               </fieldset>
-              <button type="submit" class="form-btn">Показать</button>
+              <div class="wrapper-btn">
+                <button type="submit" class="wrapper-btn__item form-btn">Показать</button>
+              </div>
             </form>
           </div>
           <div class="block-catalog">
@@ -161,21 +163,21 @@
                 <a href="#">
                   <img src="img/item-2.jpg" alt="Гаджет" width="360" height="380">
                   <h3>Профессиональная селфи-палка</h3>
-                  <span class="catalog-list__price">1500 руб.</span>
+                  <span class="catalog-list__price">1 500 руб.</span>
                 </a>
               </li>
               <li class="catalog-list__item">
                 <a href="#">
                   <img src="img/item-3.jpg" alt="Гаджет" width="360" height="380">
                   <h3>Непотопляемая селфи-палка</h3>
-                  <span class="catalog-list__price">2500 руб.</span>
+                  <span class="catalog-list__price">2 500 руб.</span>
                 </a>
               </li>
               <li class="catalog-list__item">
                 <a href="#">
                   <img src="img/item-4.jpg" alt="Гаджет" width="360" height="380">
                   <h3>Селфи-палка «Следуй за мной»</h3>
-                  <span class="catalog-list__price">4900 руб.</span>
+                  <span class="catalog-list__price">4 900 руб.</span>
                 </a>
               </li>
             </ul>
@@ -191,7 +193,7 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer-catalog">
       <div class="wrapper-footer">
         <div class="footer-adress">
           <a class="logo logo-footer">
