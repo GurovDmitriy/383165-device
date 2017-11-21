@@ -11,6 +11,13 @@ var btn2 = document.querySelector(".slider-controls-btn-2");
 var btn3 = document.querySelector(".slider-controls-btn-3");
 var slider = document.querySelector(".slider-container");
 
+var servicesBtn1 = document.querySelector(".serveces-menu-btn-1");
+var servicesBtn2 = document.querySelector(".serveces-menu-btn-2");
+var servicesBtn3 = document.querySelector(".serveces-menu-btn-3");
+var servicesDelivery = document.querySelector(".serveces-menu__delivery");
+var servicesWarranty = document.querySelector(".serveces-menu__warranty");
+var servicesCredit = document.querySelector(".serveces-menu__credit");
+
 
 WriteUs.addEventListener("click", function(event) {
   event.preventDefault();
@@ -55,4 +62,23 @@ btn3.addEventListener("click", function(event) {
   btn1.classList.remove("slider-controls-btn-1--active");
   btn2.classList.remove("slider-controls-btn-1--active");
   btn3.classList.add("slider-controls-btn-1--active");  
+});
+
+
+servicesBtn1.addEventListener("click", function(event) {
+  servicesWarranty.classList.remove("serveces-menu__caption--active");
+  servicesCredit.classList.remove("serveces-menu__caption--active");
+  servicesDelivery.classList.add("serveces-menu__caption--active");  
+});
+
+servicesBtn2.addEventListener("click", function(event) {
+  servicesWarranty.classList.add("serveces-menu__caption--active");
+  servicesCredit.classList.remove("serveces-menu__caption--active");
+  servicesDelivery.classList.remove("serveces-menu__caption--active");  
+});
+
+servicesBtn3.addEventListener("click", function(event) {
+  servicesWarranty.classList.remove("serveces-menu__caption--active");
+  servicesCredit.classList.add("serveces-menu__caption--active");
+  servicesDelivery.classList.remove("serveces-menu__caption--active");  
 });

@@ -758,6 +758,7 @@ body {
 }
 
 .serveces-menu__delivery {
+  display: none;  
   background: url("../img/delivery.svg") no-repeat 99.3% 44%;
  }
 
@@ -769,6 +770,10 @@ body {
 .serveces-menu__credit {
   display: none;
   background: url("../img/credit.svg") no-repeat 99.3% 44%;
+}
+
+.serveces-menu__caption--active {
+  display: block;
 }
 
 /* доставка гарантия кредит состояния элементов */
