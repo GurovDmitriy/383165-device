@@ -769,12 +769,42 @@ body {
 
 .contacts__map {
   margin-top: 39px;
+  cursor: pointer;
 }
 
 .about-us .wrapper-btn,
 .contacts .wrapper-btn {
   width: 260px;
   margin-top: 65px;
+}
+
+.map-big {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 960px;
+  height: 559px;
+}
+
+.map-big iframe {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.modal-close-map {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  opacity: 0.5;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.map-big--active {
+  display: block;
 }
 
 /* подвал */
@@ -976,11 +1006,18 @@ body {
 /* напишите нам */
 
 .wrapper-form  {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
+
   width: 960px;
   padding: 0 100px;
-  padding-top: 99px;
+  padding-top: 95px;
   padding-bottom: 92px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.5);   
 }
 
 .wrapper-form legend {
@@ -1002,20 +1039,83 @@ body {
 
 .wrapper-name-form,
 .wrapper-name-form input {
-  width: 360px; 
+  width: 360px;
+  height: 50px; 
 }
 
 .wrapper-email-form,
 .wrapper-email-form input {
   width: 360px;
+  height: 50px;   
 }
 
-.wrapper-text-form {
+.wrapper-form input {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.wrapper-form textarea {
+  padding: 17px;
+  padding-left: 20px;
+
+}
+
+.wrapper-text-form,
+.wrapper-text-form textarea {
   width: 100%;
 }
 
 .wrapper-text-form textarea {
   width: 100%;
+  height: 156px;  
+}
+
+.wrapper-text-form {
+  margin-top: 64px;
+}
+
+.wrapper-btn-form {
+  width: 200px;
+}
+
+.wrapper-btn-form button {
+  border: none;
+  padding: 0px;
+}
+
+.wrapper-btn-form {
+  margin-top: 36px;
+}
+
+.wrapper-inner-form input,
+.wrapper-inner-form textarea {
+  border: none;
+  background-color: rgba(242, 242, 242, 1);
+  margin-top: 9px;  
+}
+
+.wrapper-inner-form input::placeholder,
+.wrapper-inner-form textarea::placeholder {
+  font-family: "Open-Sans";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-close {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.wrapper-inner-form label {
+  line-height: 18px;
+}
+
+.wrapper-form--active {
+  display: block;
 }
 
 /* каталог */
