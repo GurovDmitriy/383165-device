@@ -807,11 +807,13 @@ body {
   display: none;
 }
 
-.firms__item-link:hover img:last-child {
+.firms__item-link:hover img:last-child,
+.firms__item-link:focus img:last-child {
   display: block;
 }
 
-.firms__item-link:hover img:first-child {
+.firms__item-link:hover img:first-child,
+.firms__item-link:focus img:first-child {
   display: none;
 }
 
@@ -913,6 +915,15 @@ body {
   opacity: 0.5;
   z-index: 2;
   cursor: pointer;
+  opacity: 0.5;
+}
+
+.modal-close-map:hover {
+  opacity: 1;
+}
+
+.modal-close-map:active {
+  opacity: 0.3;
 }
 
 .map-big--active {
@@ -1229,6 +1240,15 @@ body {
   right: 22px;
   top: 22px;
   cursor: pointer;
+  opacity: 0.5;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
 }
 
 .wrapper-inner-form label {
@@ -1618,6 +1638,7 @@ body {
   transform: translate(0%, -50%);
   width: 27px;
   height: 27px;
+
   cursor: pointer;
 }
 
@@ -1705,7 +1726,7 @@ input[type="radio"] + label:hover {
 }
 
 .catalog-list__item h3 {
-  margin-top: 34px;
+  margin-top: 30px;
   width: 265px;
 }
 
@@ -1716,7 +1737,7 @@ input[type="radio"] + label:hover {
 .catalog-list__price {
   font-weight: 300;
   font-size: 16px;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .catalog-list__item a {
@@ -1754,8 +1775,31 @@ input[type="radio"] + label:hover {
   margin-top: 5px;    
 }
 
-.shape-new {
+.new-label {
+  display: none;
   position: absolute;
+  top: 29px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.new-label__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-list__item:last-child .new-label {
+  display: block;
 }
 
 /* состояния картинок в каталоге */

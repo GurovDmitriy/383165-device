@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/stylemin.css">    
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="user-nav user-nav-catalog">
           <li class="user-nav__item user-nav__search">
-            <form method="get" action="https://echo.htmlacademy.ru">
+            <form method="post" action="#">
               <label class="visually-hidden" for="search-nav">Поиск по сайту</label>
               <input type="search" placeholder="Поиск по сайту" class="search" id="search-nav">
               <button type="button" class="button-search">Найти</button>
@@ -95,7 +95,7 @@
       <div class="wrapper-catalog">
         <div class="catalog">
           <div class="block-form"> 
-            <form action="#">
+            <form method="get" action="https://echo.htmlacademy.ru">
               <div class="rang-filter">
                 <span>Стоимость</span>
                 <div class="range-controls">
@@ -159,56 +159,72 @@
           <div class="block-catalog">
             <ul class="catalog-list">
               <li class="catalog-list__item">
-                <a href="#">
+                <picture>
                   <img src="img/item-1.png" alt="Гаджет" width="360" height="380">
-                  <h3>Любительская селфи-палка</h3>
-                  <span class="catalog-list__price">500 руб.</span>
-                </a>
+                  <a href="catalog-item.html"><h3>Любительская селфи-палка</h3>
+                    <span class="catalog-list__price">500 руб.</span>
+                  </a>
+                </picture>
                 <div class="in-cart">
                   <div class="wrapper-btn">
                     <button type="button" class="wrapper-btn__item in-cart-btn">В корзину</button>
                   </div>
                   <button type="button" class="in-compare-btn">Добавить к сравнению</button>
                 </div>
+                <div class="new-label">
+                  <div class="new-label__item">New</div>
+                </div>
               </li>
               <li class="catalog-list__item">
-                <a href="#">
+                <picture>
                   <img src="img/item-2.jpg" alt="Гаджет" width="360" height="380">
-                  <h3>Профессиональная селфи-палка</h3>
-                  <span class="catalog-list__price">1 500 руб.</span>
-                </a>
+                  <a href="catalog-item.html"><h3>Профессиональная селфи-палка</h3>
+                    <span class="catalog-list__price">1 500 руб.</span>
+                  </a>
+                </picture>
                 <div class="in-cart">
                   <div class="wrapper-btn">
                     <button type="button" class="wrapper-btn__item in-cart-btn">В корзину</button>
                   </div>
                   <button type="button" class="in-compare-btn">Добавить к сравнению</button>
-                </div>                
+                </div>   
+                <div class="new-label">
+                  <div class="new-label__item">New</div>
+                </div>                             
               </li>
               <li class="catalog-list__item">
-                <a href="#">
+                <picture>
                   <img src="img/item-3.jpg" alt="Гаджет" width="360" height="380">
-                  <h3>Непотопляемая селфи-палка</h3>
-                  <span class="catalog-list__price">2 500 руб.</span>
-                </a>
+                  <a href="catalog-item.html"><h3>Непотопляемая селфи-палка</h3>
+                    <span class="catalog-list__price">2 500 руб.</span>
+                  </a>
+                </picture>
                 <div class="in-cart">
                   <div class="wrapper-btn">
                     <button type="button" class="wrapper-btn__item in-cart-btn">В корзину</button>
                   </div>
                   <button type="button" class="in-compare-btn">Добавить к сравнению</button>
-                </div>                
+                </div> 
+                <div class="new-label">
+                  <div class="new-label__item">New</div>
+                </div>                               
               </li>
               <li class="catalog-list__item">
-                <a href="#">
+                <picture>
                   <img src="img/item-4.jpg" alt="Гаджет" width="360" height="380">
-                  <h3>Селфи-палка «Следуй за мной»</h3>
-                  <span class="catalog-list__price">4 900 руб.</span>
-                </a>
+                  <a href="catalog-item.html"><h3>Селфи-палка «Следуй за мной»</h3>
+                    <span class="catalog-list__price">4 900 руб.</span>
+                  </a>
+                </picture>
                 <div class="in-cart">
                   <div class="wrapper-btn">
                     <button type="button" class="wrapper-btn__item in-cart-btn">В корзину</button>
                   </div>
                   <button type="button" class="in-compare-btn">Добавить к сравнению</button>
-                </div>               
+                </div>    
+                <div class="new-label">
+                  <div class="new-label__item">New</div>
+                </div>                           
               </li>
             </ul>
             <ul class="paginator">
@@ -332,6 +348,6 @@
         </svg>
       </section>          
     </footer>    
-    <script src="js/script.js"></script>        
+    <script src="js/scriptsmin.js"></script>        
 </body>
 </html>
