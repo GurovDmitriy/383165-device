@@ -110,7 +110,7 @@ html {
   padding: 0;
 
   list-style: none;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 36px; 
   letter-spacing: -0.03em;
@@ -135,7 +135,7 @@ html {
 
   border: none;
   background: rgba(247, 226, 150, 1) url("../img/search.svg") no-repeat 0 50%;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -224,7 +224,7 @@ html {
 }
 
 .submenu-list__item a {
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -314,7 +314,7 @@ html {
   margin: 0;
   padding: 0;
 
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -355,7 +355,7 @@ html {
 
 .user-nav__search input:focus {
   outline: none;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -507,7 +507,7 @@ html {
   width: 481px;
   margin-top: 19px;  
 
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -545,7 +545,7 @@ html {
   background-color: rgba(240, 197, 46, 1);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;;
   font-weight: 800;  
   font-size: 18px;
   line-height: 8px;
@@ -561,7 +561,7 @@ html {
 }
 
 .table__row:last-of-type {
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -676,7 +676,7 @@ html {
 }
 
 .popular__item h3 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;;
   font-size: 18px;
   font-weight: 800; 
   line-height: 1.2em;
@@ -784,7 +784,7 @@ html {
 
   margin-top: -11px;  
 
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -907,7 +907,7 @@ html {
 }
 
 .section-contacts p {
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -1025,7 +1025,7 @@ html {
 
   padding-top: 1px;
 
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -1104,7 +1104,7 @@ html {
   margin-left: auto;
   margin-top: -5px;  
 
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -1301,7 +1301,7 @@ html {
 
 .wrapper-inner-form input::placeholder,
 .wrapper-inner-form textarea::placeholder {
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -1453,7 +1453,7 @@ html {
 
   padding-right: 20px;
 
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 14px;
   line-height: 36px;
   font-weight: 300;
@@ -1495,7 +1495,7 @@ html {
   display: block;
   text-decoration: none;
   background: none;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.015em;
@@ -1515,7 +1515,7 @@ html {
 
 .filter,
 .catalog-sort li:first-child {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.23em;
@@ -1684,7 +1684,7 @@ html {
 .price-controls {
   margin-top: 10px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;;
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -1712,7 +1712,7 @@ html {
   padding: 0;
 
   list-style: none;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
@@ -1842,7 +1842,7 @@ input[type="radio"] + label:hover {
 .catalog-list__item a,
 .catalog-list__item h3 {
   text-decoration: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 0.015em;
@@ -1890,7 +1890,7 @@ input[type="radio"] + label:hover {
 .in-compare-btn {
   border: none;
   background: none;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", "Arial", sans-serif;;
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 0.015em;
@@ -1965,7 +1965,7 @@ input[type="radio"] + label:hover {
 
 .paginator a {
   text-decoration: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.2em;
